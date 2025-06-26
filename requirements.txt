@@ -1,0 +1,17 @@
+numpy
+pandas
+memory-profiler
+scikit-learn
+scipy
+os
+sys
+kmodes
+glob
+fnmatch
+plotly
+kaleido
+pyclustertend
+scipy
+umap
+pacmap
+prince

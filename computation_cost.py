@@ -7,7 +7,6 @@ import json
 
 # Imports Algos
 import algorithms.kproto
-import algorithms.pretopomd
 import algorithms.denseclus
 import algorithms.kamila
 import algorithms.modha_spangler
@@ -19,6 +18,7 @@ import algorithms.pretopo_PaCMAP
 import algorithms.pretopo_laplacian
 import algorithms.pretopo_FAMD
 import algorithms.clustmd
+import algorithms.pretopomd
 
 
 def get_algo(args, **kwargs):
@@ -30,8 +30,6 @@ def get_algo(args, **kwargs):
         return algorithms.denseclus.process
     if args[0] == "kproto":
         return algorithms.kproto.process
-    if args[0] == "pretopologic_euclidean_hamming":
-        return algorithms.pretopologic_euclidean_hamming.process
     if args[0] == "kamila":
         return algorithms.kamila.process
     if args[0] == "modha_spangler":
@@ -52,6 +50,8 @@ def get_algo(args, **kwargs):
         return algorithms.pretopo_laplacian.process
     if args[0] == "clustmd":
         return algorithms.clustmd.process
+    if args[0] == "pretopomd":
+        return algorithms.pretopomd.process
 
     raise NotImplementedError("Wrong Algorithm Name")
 
